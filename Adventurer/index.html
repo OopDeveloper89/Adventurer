@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html>
+	<head>
+		<script type="text/javascript" src="/js/libs/jquery/jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="/js/libs/kgame/KGame.js"></script>
+		<script type="text/javascript" src="/js/libs/kgame/KGameloop.js"></script>
+		<script type="text/javascript" src="/js/libs/kgame/KFileLoader.js"></script>
+		<script type="text/javascript" src="/js/libs/kgame/KMapBuilder.js"></script>
+		<script type="text/javascript" src="/js/libs/kgame/KMap.js"></script>
+	</head>
+	
+	<body>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var kgame = new KGame();
+				kgame.start('/resources/maps/startmap.xml');
+			});
+		</script>
+		
+	</body>
+</html>
