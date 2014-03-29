@@ -1,7 +1,16 @@
+/**
+ * Class to start a game.
+ * 
+ * @author oopdeveloper89 
+ */
 var KGame = function() {
 	
+	/**
+	 * Start the game.
+	 * 
+	 * @author kkaya 
+	 */
 	this.start = function(gameMapUrl) {
-
 		KFileLoader
 		.load(gameMapUrl)
 		.then(function(mapXml) {

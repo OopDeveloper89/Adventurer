@@ -35,6 +35,8 @@ var KMapBuilder = function() {
 			var layerTileMap = {};
 			var cachedSubimages = {};
 			for (var layerIndex = 0; layerIndex < layers.length; layerIndex++) {
+				layerTileMap[layerIndex] = {};
+				
 				var layer = layers[layerIndex];
 				var layerData = layer.getElementsByTagName('data')[0];
 				var layerTiles = layerData.getElementsByTagName('tile');
@@ -56,6 +58,7 @@ var KMapBuilder = function() {
 							cachedSubimages[tileId] = subimg;
 							tileImg = subimg;
 						}
+						layerTileMap[layerIndex][column] = {};
 						layerTileMap[layerIndex][column][row] = tileImg;
 					}
 				}
